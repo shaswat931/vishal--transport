@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Vishal Transport</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Using Poppins and Montserrat for a more modern font aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="hero-header"> <!-- Renamed from 'hero' for clarity as we have a new 'hero-main' section -->
+    <div class="logo">🚛 Vishal Transport</div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="booking.html" class="nav-link">Booking</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+    <!-- New Hero Section for 3D elements with Three.js -->
+    <section class="hero-main">
+      <canvas id="three-canvas"></canvas> <!-- Canvas for Three.js rendering -->
+      <div class="hero-content container">
+        <h1 class="fade-in-up">Your Logistics Partner for a Connected World</h1>
+        <p class="fade-in-up">Driving Efficiency, Delivering Excellence, Every Mile.</p>
+        <div class="hero-buttons fade-in-up">
+            <a href="booking.html" class="btn btn-primary">Book a Service</a>
+            <a href="services.html" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Benefits / Info Cards Section -->
+    <section class="info-cards">
+      <div class="container grid-3">
+          <div class="card fade-in-up">
+              <i class="fas fa-shipping-fast"></i>
+              <h3>Rapid Delivery</h3>
+              <p>Accelerating your shipments with speed and precision.</p>
+          </div>
+          <div class="card fade-in-up">
+              <i class="fas fa-shield-alt"></i> <!-- Updated icon for security -->
+              <h3>Secure Logistics</h3>
+              <p>Ensuring the safety and integrity of your cargo.</p>
+          </div>
+          <div class="card fade-in-up">
+              <i class="fas fa-headset"></i>
+              <h3>Dedicated Support</h3>
+              <p>24/7 assistance from our expert logistics team.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Key Services Section -->
+    <section class="key-services-section">
+        <div class="container">
+            <h2 class="fade-in-up">Our Core Services</h2>
+            <p class="fade-in-up">From last-mile delivery to international freight, we have solutions tailored for your unique needs.</p>
+            <div class="services-grid">
+                <div class="service-preview-card fade-in-up">
+                    <i class="fas fa-truck"></i> <!-- More general truck icon -->
+                    <h3>Local & Inter-City Freight</h3>
+                    <p>Efficient transport for goods within cities and across regions, including LTL and FTL options.</p>
+                    <a href="services.html" class="btn btn-tertiary btn-small">Learn More</a> <!-- New btn-tertiary class -->
+                </div>
+                <div class="service-preview-card fade-in-up">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Warehousing & Storage</h3>
+                    <p>Flexible storage solutions and comprehensive inventory management for seamless supply chains.</p>
+                    <a href="services.html" class="btn btn-tertiary btn-small">Learn More</a>
+                </div>
+                <div class="service-preview-card fade-in-up">
+                    <i class="fas fa-ship"></i> <!-- Ship icon for international -->
+                    <h3>Global Logistics</h3>
+                    <p>Streamlined international shipping via air, sea, and land, with expert customs handling.</p>
+                    <a href="services.html" class="btn btn-tertiary btn-small">Learn More</a>
+                </div>
+                <div class="service-preview-card fade-in-up">
+                    <i class="fas fa-people-carry-box"></i> <!-- People carrying box for commercial -->
+                    <h3>Custom Business Solutions</h3>
+                    <p>Tailored logistics strategies and dedicated fleet services for enterprise-level requirements.</p>
+                    <a href="services.html" class="btn btn-tertiary btn-small">Learn More</a>
+                </div>
+            </div>
+            <div class="text-center fade-in-up" style="margin-top: 40px;">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="fade-in-up">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in-up">
+                    <p class="quote">"Vishal Transport transformed our supply chain. Their efficiency and commitment to security are unmatched!"</p>
+                    <p class="author">- John Doe, CEO of Global Goods Inc.</p>
+                </div>
+                <div class="testimonial-card fade-in-up">
+                    <p class="quote">"Exceptional service! Our perishable goods arrived on time and in perfect condition thanks to their temperature-controlled fleet."</p>
+                    <p class="author">- Jane Smith, Fresh Produce Co.</p>
+                </div>
+                <div class="testimonial-card fade-in-up">
+                    <p class="quote">"The team at Vishal Transport goes above and beyond. Their dedicated support made our complex international shipment a breeze."</p>
+                    <p class="author">- Mike Johnson, Tech Solutions Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Overview Section -->
+    <section class="about-overview">
+        <div class="container fade-in-up">
+            <h2>Who We Are</h2>
+            <p>Vishal Transport is a leading logistics provider dedicated to innovation and customer success. We leverage cutting-edge technology and a vast network to deliver seamless transportation solutions globally.</p>
+            <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section fade-in-up">
+      <h2>Ready to Experience Seamless Logistics?</h2>
+      <p>Partner with Vishal Transport for reliable, efficient, and innovative transport solutions.</p>
+      <a href="contact.html" class="btn btn-tertiary">Get a Quote Today</a> <!-- New btn-tertiary class -->
+    </section>
+  </main>
+
+  <!-- Live Chat Box -->
+  <div class="chat-container">
+    <div class="chat-header">💬 Need Help? Chat with us!</div>
+    <div class="chat-body">
+      <div class="chat-messages" id="chatMessages">
+        <div class="bot-message">Hi! I'm VishalBot 🤖. How can I help you today?</div>
+      </div>
+
+      <div class="quick-buttons">
+        <button data-question="Tell me about your services">Services</button>
+        <button data-question="Who are you?">Company</button>
+        <button data-question="How can I contact you?">Contact</button>
+        <button data-question="How to book a vehicle?">Booking</button>
+      </div>
+
+      <form id="chatForm">
+        <input type="text" id="userInput" placeholder="Type your message..." required />
+        <button type="submit">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Go to Top Button -->
+  <button id="goToTopBtn" class="go-to-top-btn" aria-label="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Vishal Transport</h4>
+        <p>Your reliable partner for comprehensive logistics and transportation services.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Mumbai, India</li>
+          <li>📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>✉️ <a href="mailto:support@vishaltransport.in">support@vishaltransport.in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Vishal Transport. All rights reserved. | Designed with 💛 by Shaswat</p>
+    </div>
+  </footer>
+
+  <!-- Three.js library CDN -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.min.js"></script>
+  <!-- Your custom Three.js scene logic -->
+  <script type="module" src="three-scene.js"></script>
+  <!-- Your main UI JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>

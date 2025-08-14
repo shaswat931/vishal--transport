@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Vishal Transport</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+  <!-- Updated to modern fonts for consistency with the new theme -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Updated to stable Font Awesome version with integrity hash -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="hero-header"> <!-- Consistent header class -->
+    <div class="logo">🚛 Vishal Transport</div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="booking.html" class="nav-link">Booking</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero about-hero-img">
+        <div class="container">
+            <h1>About Vishal Transport</h1>
+        </div>
+    </section>
+
+    <section class="about-section fade-in-up">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>To simplify logistics by providing reliable, tech-enabled transport services that serve individuals, startups, and enterprises efficiently, connecting businesses and communities.</p>
+        </div>
+    </section>
+
+    <section class="benefits-section fade-in-up">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="benefit-grid">
+                <div class="benefit-box">✔ Instant Booking</div>
+                <div class="benefit-box">✔ Affordable Pricing</div>
+                <div class="benefit-box">✔ Safe & Insured Delivery</div>
+                <div class="benefit-box">✔ 24/7 Customer Support</div>
+                <div class="benefit-box">✔ Advanced Tracking</div> <!-- Added a new benefit -->
+                <div class="benefit-box">✔ Eco-Friendly Options</div> <!-- Added another new benefit -->
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section fade-in-up">
+        <div class="container">
+            <h2>Our Journey</h2>
+            <ul class="timeline">
+                <li><span>2020</span> - Vishal Transport was founded, driven by a vision for efficient logistics.</li>
+                <li><span>2021</span> - Surpassed 1000+ bookings milestone, expanding our reach and service quality.</li>
+                <li><span>2022</span> - Introduced advanced tracking systems and expanded our fleet to include diverse vehicle types.</li> <!-- Refined timeline entry -->
+                <li><span>2023</span> - Expanded operations to 20+ major cities, enhancing our network and service accessibility.</li>
+                <li><span>2024</span> - Launched our dedicated customer support portal and mobile app for seamless user experience.</li> <!-- Added a new timeline entry -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="team-section fade-in-up">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="icon">👨‍💼</div>
+                    <h4>Vishal Pandey</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <div class="icon">👩‍💼</div>
+                    <h4>Devsharan Pandey</h4>
+                    <p>Operations Head</p>
+                </div>
+                <div class="team-member">
+                    <div class="icon">🧑‍💻</div>
+                    <h4>Shaswat Shukla</h4>
+                    <p>Customer Support Lead</p> <!-- Minor title refinement -->
+                </div>
+                 <div class="team-member"> <!-- Added new team member for demonstration -->
+                    <div class="icon">📊</div>
+                    <h4>Anjali Verma</h4>
+                    <p>Logistics Analyst</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section fade-in-up">
+      <h2>Ready to Experience Seamless Logistics?</h2> <!-- Consistent CTA with index.html -->
+      <p>Partner with Vishal Transport for reliable, efficient, and innovative transport solutions.</p>
+      <a href="contact.html" class="btn btn-tertiary">Get a Quote Today</a> <!-- Consistent CTA button -->
+    </section>
+  </main>
+
+  <!-- Live Chat Box -->
+  <div class="chat-container">
+    <div class="chat-header">💬 Need Help? Chat with us!</div>
+    <div class="chat-body">
+      <div class="chat-messages" id="chatMessages">
+        <div class="bot-message">Hi! I'm VishalBot 🤖. How can I help you today?</div>
+      </div>
+
+      <div class="quick-buttons">
+        <button data-question="Tell me about your services">Services</button>
+        <button data-question="Who are you?">Company</button>
+        <button data-question="How can I contact you?">Contact</button>
+        <button data-question="How to book a vehicle?">Booking</button>
+      </div>
+
+      <form id="chatForm">
+        <input type="text" id="userInput" placeholder="Type your message..." required />
+        <button type="submit">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Go to Top Button -->
+  <button id="goToTopBtn" class="go-to-top-btn" aria-label="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Vishal Transport</h4>
+        <p>Your reliable partner for comprehensive logistics and transportation services.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📍 Mumbai, India</li>
+          <li>📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li>✉️ <a href="mailto:support@vishaltransport.in">support@vishaltransport.in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Vishal Transport. All rights reserved. | Designed with 💛 by Shaswat</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

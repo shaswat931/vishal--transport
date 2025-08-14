@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vishal Transport</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="hero-header">
+        <div class="logo">🚛 Vishal Transport</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="booking.html" class="nav-link">Booking</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero-img">
+            <div class="container">
+                <h1>Contact Us</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="fade-in-up">Get in Touch</h2>
+                <p class="fade-in-up">Have questions, need a custom quote, or want to discuss a partnership? Reach out to us using the form below or our direct contact details.</p>
+                <p class="fade-in-up">Your message will be securely sent to our support team.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container fade-in-up">
+                        <h3>Send us a message</h3>
+                        <!-- NOTE: The 'action' and 'method' attributes are removed. -->
+                        <!-- Form submission will be handled by JavaScript (index.js) via Fetch API. -->
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <input type="text" id="contactSubject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message *</label>
+                                <textarea id="contactMessage" name="message" rows="7" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div class="form-message"></div> <!-- Div for feedback messages -->
+                        </form>
+                    </div>
+
+                    <div class="contact-info fade-in-up">
+                        <h3>Our Details</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Mumbai,+India" target="_blank" rel="noopener noreferrer">Mumbai, India</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+918446321922">+91 8446321922</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:vishaltempuservice844@gmail.com">vishaltempuservice844@gmail.com</a></p>
+                        <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</p>
+
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in-up">
+            <h2>Ready to Experience Seamless Logistics?</h2>
+            <p>Partner with Vishal Transport for reliable, efficient, and innovative transport solutions.</p>
+            <a href="contact.html" class="btn btn-tertiary">Get a Quote Today</a>
+        </section>
+    </main>
+
+    <!-- Live Chat Box -->
+    <div class="chat-container">
+        <div class="chat-header">💬 Need Help? Chat with us!</div>
+        <div class="chat-body">
+          <div class="chat-messages" id="chatMessages">
+            <div class="bot-message">Hi! I'm VishalBot 🤖. How can I help you today?</div>
+          </div>
+    
+          <div class="quick-buttons">
+            <button data-question="Tell me about your services">Services</button>
+            <button data-question="Who are you?">Company</button>
+            <button data-question="How can I contact you?">Contact</button>
+            <button data-question="How to book a vehicle?">Booking</button>
+          </div>
+    
+          <form id="chatForm">
+            <input type="text" id="userInput" placeholder="Type your message..." required />
+            <button type="submit">➤</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Go to Top Button -->
+      <button id="goToTopBtn" class="go-to-top-btn" aria-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Vishal Transport</h4>
+                <p>Your reliable partner for comprehensive logistics and transportation services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 Mumbai, India</li>
+                    <li>📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li>✉️ <a href="mailto:support@vishaltransport.in">support@vishaltransport.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Vishal Transport. All rights reserved. | Designed with 💛 by Shaswat</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

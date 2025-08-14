@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Vishal Transport</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="hero-header">
+        <div class="logo">🚛 Vishal Transport</div>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="booking.html" class="nav-link">Booking</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section class="page-hero booking-hero-img">
+            <div class="container">
+                <h1>Book Your Transport</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="fade-in-up">Make a Reservation</h2>
+                <p class="fade-in-up">Fill out the form below to book your next delivery or passenger transport. Your request will be sent to our team for processing and confirmation.</p>
+                <!-- NOTE: The 'action' and 'method' attributes are removed. -->
+                <!-- Form submission will be handled by JavaScript (index.js) via Fetch API. -->
+                <form class="booking-form fade-in-up">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Phone number should be 10 digits">
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup">Pickup Location *</label>
+                        <input type="text" id="pickup" name="pickup" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination *</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Type of Service</label>
+                        <select id="serviceType" name="serviceType">
+                            <option value="">Select a service type</option>
+                            <option value="cargo">Cargo & Freight</option>
+                            <option value="passenger">Passenger Transport</option>
+                            <option value="warehousing">Warehousing</option>
+                            <option value="international">International Logistics</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes / Cargo Details</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+                    <div id="bookingMessage" class="form-message"></div> <!-- Div for feedback messages -->
+                </form>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in-up">
+            <h2>Any Questions?</h2>
+            <p>Feel free to contact our support team for any queries related to booking.</p>
+            <a href="contact.html" class="btn btn-tertiary">Contact Us</a>
+        </section>
+    </main>
+
+    <!-- Live Chat Box -->
+    <div class="chat-container">
+        <div class="chat-header">💬 Need Help? Chat with us!</div>
+        <div class="chat-body">
+          <div class="chat-messages" id="chatMessages">
+            <div class="bot-message">Hi! I'm VishalBot 🤖. How can I help you today?</div>
+          </div>
+    
+          <div class="quick-buttons">
+            <button data-question="Tell me about your services">Services</button>
+            <button data-question="Who are you?">Company</button>
+            <button data-question="How can I contact you?">Contact</button>
+            <button data-question="How to book a vehicle?">Booking</button>
+          </div>
+    
+          <form id="chatForm">
+            <input type="text" id="userInput" placeholder="Type your message..." required />
+            <button type="submit">➤</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Go to Top Button -->
+      <button id="goToTopBtn" class="go-to-top-btn" aria-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Vishal Transport</h4>
+                <p>Your reliable partner for comprehensive logistics and transportation services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📍 Mumbai, India</li>
+                    <li>📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li>✉️ <a href="mailto:support@vishaltransport.in">support@vishaltransport.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Vishal Transport. All rights reserved. | Designed with 💛 by Shaswat</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
