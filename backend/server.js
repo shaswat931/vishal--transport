@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000; // Backend will run on port 5000 or speci
 
 // --- Middleware ---
 app.use(cors({
-    origin: 'http://127.0.0.1:5500', // IMPORTANT: Replace with the actual origin of your frontend
+    origin: 'https://vishal-transport.netlify.app/', // IMPORTANT: Replace with the actual origin of your frontend
     // If you're using Live Server in VS Code, it's usually http://127.0.0.1:5500 or http://localhost:5500.
     // In production, this would be your website's domain (e.g., 'https://www.vishaltransport.in').
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
